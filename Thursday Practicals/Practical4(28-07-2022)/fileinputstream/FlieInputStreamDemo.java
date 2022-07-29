@@ -7,6 +7,8 @@ class FlieInputStreamDemo
          {
            FileInputStream fn = new FileInputStream("data.txt");
   	   int a;
+	   System.out.println("After skiping the file content:");
+           fn.skip(7);
 	   while((a=fn.read())!=-1)
               {
 	          System.out.print((char)a);
